@@ -55,7 +55,7 @@ nav.forEach((link, index) => {
 });
 
 //add CTA
-let cta = document.querySelector(".cta");
+const cta = document.querySelector(".cta");
 
 const ctaImage = cta.querySelector("img");
 ctaImage.src = "img/header-img.png";
@@ -65,3 +65,25 @@ banner.innerHTML = "DOM<br> Is<br> Awesome";
 
 const btn = cta.querySelector("button");
 btn.textContent = "Get Started";
+
+//Main Content
+const mainContent = document.querySelector(".main-content");
+
+const middleImage = mainContent.querySelector("img");
+middleImage.src = "img/mid-page-accent.jpg";
+
+//Main Content Text
+const topContent = document.querySelector(".top-content");
+
+const topH4s = topContent.querySelectorAll("h4");
+topH4s[0].textContent = "Features";
+topH4s[1].textContent = "About";
+
+const topPs = topContent.querySelectorAll("p");
+topPs[0].textContent = `Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
+in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
+topPs[1].textContent = `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
