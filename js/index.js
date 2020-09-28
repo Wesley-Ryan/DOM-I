@@ -46,9 +46,20 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
+const navBar = document.querySelector("nav");
+
+//Add new links
+navBar.append("New Link 2");
+navBar.prepend("New Link 1");
+navBar.style.color = "green";
+
 //set up the Nav
 const nav = document.querySelectorAll("a");
+
+console.log(nav);
+
 nav.forEach((link, index) => {
+  link.style.color = "green";
   index += 1;
   link.href = siteContent.nav[`nav-item-${index}`];
   link.textContent = siteContent.nav[`nav-item-${index}`];
