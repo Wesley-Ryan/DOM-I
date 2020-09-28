@@ -87,3 +87,26 @@ scelerisque quis.`;
 topPs[1].textContent = `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
 interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
 scelerisque quis.`;
+
+//Bottom Content
+
+const bottomContent = document.querySelector(".bottom-content");
+
+const bottomH4s = bottomContent.querySelectorAll("h4");
+bottomH4s[0].textContent = "Services";
+bottomH4s[1].textContent = "Product";
+bottomH4s[2].textContent = "Vision";
+
+const bottomPs = bottomContent.querySelectorAll("p");
+
+bottomPs[0].textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
+in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
+bottomPs[1].textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
+bottomPs[2].textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
