@@ -53,3 +53,15 @@ nav.forEach((link, index) => {
   link.href = siteContent.nav[`nav-item-${index}`];
   link.textContent = siteContent.nav[`nav-item-${index}`];
 });
+
+//add CTA
+let cta = document.querySelector(".cta");
+
+const ctaImage = cta.querySelector("img");
+ctaImage.src = "img/header-img.png";
+
+const banner = cta.querySelector("h1");
+banner.innerHTML = "DOM<br> Is<br> Awesome";
+
+const btn = cta.querySelector("button");
+btn.textContent = "Get Started";
