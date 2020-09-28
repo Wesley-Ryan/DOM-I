@@ -48,7 +48,7 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 const navBar = document.querySelector("nav");
 
-//Add new links
+//Add new links with color
 navBar.append("New Link 2");
 navBar.prepend("New Link 1");
 navBar.style.color = "green";
