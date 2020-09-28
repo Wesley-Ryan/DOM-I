@@ -61,10 +61,10 @@ const ctaImage = cta.querySelector("img");
 ctaImage.src = "img/header-img.png";
 
 const banner = cta.querySelector("h1");
-banner.innerHTML = "DOM<br> Is<br> Awesome";
+banner.innerHTML = siteContent.cta.h1;
 
 const btn = cta.querySelector("button");
-btn.textContent = "Get Started";
+btn.textContent = siteContent.cta.button;
 
 //Main Content
 const mainContent = document.querySelector(".main-content");
@@ -76,37 +76,43 @@ middleImage.src = "img/mid-page-accent.jpg";
 const topContent = document.querySelector(".top-content");
 
 const topH4s = topContent.querySelectorAll("h4");
-topH4s[0].textContent = "Features";
-topH4s[1].textContent = "About";
+topH4s[0].textContent = siteContent["main-content"]["features-h4"];
+topH4s[1].textContent = siteContent["main-content"]["about-h4"];
 
 const topPs = topContent.querySelectorAll("p");
-topPs[0].textContent = `Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
-in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+topPs[0].textContent = siteContent["main-content"]["features-content"];
 
-topPs[1].textContent = `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+topPs[1].textContent = siteContent["main-content"]["about-content"];
 
 //Bottom Content
 
 const bottomContent = document.querySelector(".bottom-content");
 
 const bottomH4s = bottomContent.querySelectorAll("h4");
-bottomH4s[0].textContent = "Services";
-bottomH4s[1].textContent = "Product";
-bottomH4s[2].textContent = "Vision";
+bottomH4s[0].textContent = siteContent["main-content"]["services-h4"];
+bottomH4s[1].textContent = siteContent["main-content"]["product-h4"];
+bottomH4s[2].textContent = siteContent["main-content"]["vision-h4"];
 
 const bottomPs = bottomContent.querySelectorAll("p");
 
-bottomPs[0].textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
-in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+bottomPs[0].textContent = siteContent["main-content"]["services-content"];
 
-bottomPs[1].textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+bottomPs[1].textContent = siteContent["main-content"]["product-content"];
 
-bottomPs[2].textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+bottomPs[2].textContent = siteContent["main-content"]["vision-content"];
+//Contact
+
+const contactSection = document.querySelector(".contact");
+
+const contactH4 = contactSection.querySelector("h4");
+contactH4.textContent = `Contact`;
+
+const contactPs = contactSection.querySelectorAll("p");
+
+contactPs[0].textContent = siteContent.contact.address;
+contactPs[1].textContent = siteContent.contact.phone;
+contactPs[2].textContent = siteContent.contact.email;
+
+const footer = document.querySelector("footer");
+const copyright = footer.querySelector("p");
+copyright.textContent = siteContent.footer.copyright;
